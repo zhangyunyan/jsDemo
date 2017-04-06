@@ -1,5 +1,4 @@
-# Tab选项卡
+# 自动轮播焦点图带文字标题简介
 
-Tab选项卡多功能展示
 
-jq+less实现
+jq.SuperSlide+less实现

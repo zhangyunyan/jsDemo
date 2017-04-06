@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <title>自动轮播焦点图带文字标题简介</title>
+    <meta name="description" content="简单实用自动轮播焦点大图带文字标题简介js特效代码。">
+    <meta name="keywords" content="简单实用,自动轮播,焦点大图,带文字标题,简介,js特效代码">
+    <meta name="author" content="张运燕">
+    <meta name="Copyright" content="张运燕">
+    <link href="public.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="m-slide" style="margin:30px auto">
+    <ul class="img">
+        <li>
+            <a href="#" target="_blank"><img src="image/1.jpg"></a></li>
+        <li>
+            <a href="#" target="_blank"><img src="image/2.jpg"></a></li>
+        <li style="display: list-item;">
+            <a href="#" target="_blank"><img src="image/3.jpg"></a></li>
+        <li>
+            <a href="#" target="_blank"><img src="image/4.jpg"></a></li>
+    </ul>
+    <ul class="tab">
+        <li class=""><a href="#"><b></b>
+            <span class="title">餐垫艺术 </span><span class="des">让餐桌色彩丰富起来 </span></a>
+        </li>
+        <li class=""><a href="#"><b></b><span class="title">秋冬款连衣裙
+		</span><span class="des">优雅的小女人味 </span></a></li>
+        <li class="on"><a href="#"><b></b><span class="title">
+		秋冬围巾 </span><span class="des">温暖来袭 </span></a></li>
+        <li class=""><a href="#"><b></b><span class="title">
+		帅气军工装 </span><span class="des">时尚中性风 </span></a></li>
+    </ul>
+    <b class="bottom-shadow"></b>
+</div>
+<div class="sogoutip" style="z-index: 2147483645; visibility: hidden; display: none;"></div>
+<div class="sogoubottom" id="sougou_bottom" style="display: none;"></div>
+<div id="ext_overlay" class="ext_overlayBG" style="display: none; z-index: 2147483646;"></div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://www.jsdaima.com/Upload/201703/1489987979/jquery.SuperSlide.js"></script>
+<script type="text/javascript">
+    function stops() {
+        return false;
+    }
+    document.oncontextmenu = stops;
+</script>
+<script type="text/javascript">
+    $(".m-slide").slide({
+        titCell: ".tab li",
+        mainCell: ".img",
+        effect: "fold",
+        autoPlay: true
+    });
+</script>
+</body>
+</html>
+
+
+
+

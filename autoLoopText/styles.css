@@ -19,10 +19,25 @@
   float: right;
   width: 193px;
 }
+.m-slide .tab li.on a {
+  border-left: 3px solid #41a1f2;
+}
+.m-slide .tab li.on a b {
+  border-left: 5px solid #41a1f2;
+  position: relative;
+  z-index: 2;
+}
+.m-slide .tab li.on a .des {
+  color: #41a1f2;
+}
+.m-slide .tab li.on a .title {
+  color: #41a1f2;
+}
 .m-slide .tab li {
   border-top: 1px solid #e5e5e5;
 }
 .m-slide .tab li a {
+  text-indent: 1rem;
   text-decoration: none;
   display: block;
   position: relative;
@@ -35,25 +50,23 @@
   position: absolute;
   left: 0;
   top: 20px;
-  width: 4px;
-  height: 11px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
   overflow: hidden;
+  display: block;
 }
 .m-slide .tab li a span {
   width: 190px;
   display: block;
 }
 .m-slide .tab li a .des {
-  left: 18px;
-  top: 26px;
   height: 16px;
   line-height: 16px;
   color: #999;
   font-size: 12px;
 }
 .m-slide .tab li a .title {
-  left: 17px;
-  top: 6px;
   height: 20px;
   line-height: 20px;
   font-size: 14px;

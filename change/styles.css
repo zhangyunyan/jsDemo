@@ -1,0 +1,30 @@
+main {
+  position: relative;
+  width: 1200px;
+  margin: 50px auto;
+}
+main h2 span {
+  float: right;
+}
+main ul.list {
+  overflow: hidden;
+  height: 240px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+main ul.list li {
+  display: flex;
+  float: left;
+  padding: 10px;
+}
+main ul.list li a img {
+  width: 100%;
+}
+main ul.list li a p {
+  color: black;
+  text-align: center;
+}
+main ul.list li a p span {
+  color: red;
+}

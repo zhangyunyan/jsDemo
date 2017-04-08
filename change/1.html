@@ -1,0 +1,154 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <title>自动轮播焦点图带文字标题简介</title>
+    <meta name="description" content="简单实用自动轮播焦点大图带文字标题简介js特效代码。">
+    <meta name="keywords" content="简单实用,自动轮播,焦点大图,带文字标题,简介,js特效代码">
+    <meta name="author" content="张运燕">
+    <meta name="Copyright" content="张运燕">
+    <link href="public.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <h2> 猜你喜欢 <span class="change">换一批</span></h2>
+    <ul class="list list1">
+        <li>
+            <a href="##">
+                <img src="image/pic1_03.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_03.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_03.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_03.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_03.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_03.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+    </ul>
+    <ul class="list list2">
+        <li>
+            <a href="##">
+                <img src="image/pic1_04.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_04.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_04.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_04.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_04.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_04.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+    </ul>
+    <ul class="list list3">
+        <li>
+            <a href="##">
+                <img src="image/pic1_05.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_05.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_05.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_05.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_05.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="##">
+                <img src="image/pic1_05.jpg" alt="">
+                <p>产品信息 <br><span>￥60.00</span></p>
+            </a>
+        </li>
+    </ul>
+</main>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function () {
+        $(".list").eq(0).css({"z-index":1});
+        var n=0;
+        $(".change").click(function () {
+            $(".list").css({"z-index":0});
+            var max=$(".list").length;
+            if(n>=max-1){
+                n=-1
+            }
+            n++;
+            $(".list").eq(n).css({"z-index":1})
+        })
+
+    })
+</script>
+</body>
+</html>
+
+
+
+
